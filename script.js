@@ -252,7 +252,7 @@ window.addEventListener('load', function(){
             this.x -= this.speed;
             if (this.x < 0 - this.width) this.x = 0;
             if(score > 10){
-                background.image.src = "kibibackground.png";
+                background.image.src = "kibibackground.PNG";
             }
             if(score > 30){
                 background.image.src = "hakumaibackground.png";
