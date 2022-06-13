@@ -10,7 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Worstgen Game</title>
+    <meta name="theme-color" content="#009578">
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/WGFavicon.png">
 </head>
 <body>
     <div id="description"><p>Month Break Survival - Move Up to Survive</p></div>
@@ -24,5 +27,6 @@
     <!--<button id="pauseButton">Pause</button>-->
 
     <script src="script.js"></script>
+    <script src="src/index.js"></script>
 </body>
 </html>
