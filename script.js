@@ -22,7 +22,7 @@ window.addEventListener('load', function(){
     //pauseButton.style.visibility = 'hidden';
 
     let audio = new Audio();
-    audio.src = 'spell.wav';
+    audio.src = 'spell.mp3';
     audio.volume = 0.2;
 
     let audio1 = new Audio();
