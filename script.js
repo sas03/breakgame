@@ -332,13 +332,13 @@ window.addEventListener('load', function(){
             }
             
             if(score > 30){
-                this.speed = 30;
-            }
-            if(score > 60){
                 this.speed = 35;
             }
-            if(score > 90){
+            if(score > 60){
                 this.speed = 40;
+            }
+            if(score > 90){
+                this.speed = 45;
             }
             if(score > 120){
                 this.speed = 50;
