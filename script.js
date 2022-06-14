@@ -513,11 +513,3 @@ window.addEventListener('load', function(){
         }
     }
 });
-
-// A ajouter
-// Changer le background, voire personnages
-// Stopper le son, si on sort de l'application / site
-// Ajouter un bouton de pause(pour le jeu et le son)
-
-// if (score == 20)
-// change background
