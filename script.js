@@ -21,14 +21,15 @@ window.addEventListener('load', function(){
 
     //pauseButton.style.visibility = 'hidden';
 
+    // 4 - 5 - 3 - weare - 6(debut) - 8 - 7(onigashima?) - faith
     let audio = new Audio();
-    audio.src = 'spell.mp3';
+    audio.src = 'believe.mp3';
     audio.volume = 0.2;
 
     let audio1 = new Audio();
     audio1.src = 'explodemini.wav';
     audio1.volume = 0.2;
-    
+
     // apply eventlisteners to keyboard events and hold an array of all currently active keys
     class InputHandler{
         constructor(){
@@ -251,22 +252,24 @@ window.addEventListener('load', function(){
             // update background's horizontal coordinate with the speed variable 
             this.x -= this.speed;
             if (this.x < 0 - this.width) this.x = 0;
-            if(score > 10){
-                background.image.src = "kibibackground.PNG";
-            }
             if(score > 30){
+                background.image.src = "kibibackground.PNG";
+                //audio.pause();
+                //audio4.play();
+            }
+            if(score > 60){
                 background.image.src = "hakumaibackground.png";
             }
-            if(score > 50){
+            if(score > 90){
                 background.image.src = "ringobackground.png";
             }
-            if(score > 70){
+            if(score > 120){
                 background.image.src = "udonbackground.png";
             }
-            if(score > 100){
+            if(score > 150){
                 background.image.src = "onigashimabackground.png";
             }
-            if(score > 140){
+            if(score > 180){
                 background.image.src = "flowercapitalbackground.png";
             }
         }
@@ -328,25 +331,25 @@ window.addEventListener('load', function(){
                 score++;
             }
             
-            if(score > 10){
+            if(score > 30){
                 this.speed = 30;
             }
-            if(score > 30){
+            if(score > 60){
                 this.speed = 35;
             }
-            if(score > 50){
+            if(score > 90){
                 this.speed = 40;
             }
-            if(score > 70){
-                this.speed = 45;
-            }
-            if(score > 100){
+            if(score > 120){
                 this.speed = 50;
             }
-            if(score > 140){
+            if(score > 150){
+                this.speed = 60;
+            }
+            if(score > 180){
                 this.speed = 30;
             }
-            if(score > 141){
+            if(score > 181){
                 gameOver = true;
             }
         }
@@ -380,7 +383,7 @@ window.addEventListener('load', function(){
         context.fillText('Score: ' + score, 22, 52);
         // If gameOver is true
         if(gameOver){
-            if(score > 141){
+            if(score > 181){
                 context.textAlign = 'center';
                 context.fillStyle = 'black';
                 context.fillText('YOU WON, press Enter or swipe down to restart!', canvas.width / 2, 200);
@@ -503,8 +506,10 @@ window.addEventListener('load', function(){
     window.onfocus = function() { 
         window_focus = true;
         //pauseButton.style.visibility = 'visible';
-        if(!gameOver){            
-            audio.play(); 
+        if(!gameOver){    
+            if(audio.paused == true){
+                audio.play(); 
+            }        
         }
     }
 });
