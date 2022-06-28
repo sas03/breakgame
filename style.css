@@ -83,3 +83,14 @@ body{
     background-color: rgb(10, 77, 77);
     transform: translateY(-10%);
 }
+
+
+@media only screen and (max-width: 300px){
+    #description{
+        margin-top: 15vh;
+    }
+    
+    #donationsupport{
+        margin-top: 50vh;
+    }
+}

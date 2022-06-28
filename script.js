@@ -103,9 +103,11 @@ window.addEventListener('load', function(){
             this.y = this.gameHeight - this.height;
             // bring image spritesheet into the game
             this.image = document.getElementById('playerImage');
+            // variable used to move through the spritesheet in horizontal direction
             this.frameX = 0;
             // the image spritesheet of the player has 8 horizontal frame
             this.maxFrame = 8;
+            // variable used to move through the spritesheet in vertical direction
             this.frameY = 0;
             // fps variable to set frame per second
             this.fps = 20;
