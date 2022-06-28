@@ -27,6 +27,9 @@
     <!--<button id="pauseButton">Pause</button>-->
 
     <script src="script.js"></script>
+    <script async type="application/javascript" src="https://a.exdynsrv.com/ad-provider.js"></script> 
+    <ins class="adsbyexoclick" data-zoneid="4726906"></ins> 
+    <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
     <script src="src/index.js"></script>
 </body>
 </html>
