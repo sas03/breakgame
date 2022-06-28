@@ -30,11 +30,6 @@
     <!--Ads 1-->
     <script type="application/javascript" src="https://syndication.exdynsrv.com/splash.php?idzone=4726912&capping=0"></script>
 
-    <!--Ads 2-->
-    <script async type="application/javascript" src="https://a.exdynsrv.com/ad-provider.js"></script> 
-    <ins class="adsbyexoclick" data-zoneid="4726922"></ins> 
-    <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
-
     <script src="src/index.js"></script>
 </body>
 </html>
